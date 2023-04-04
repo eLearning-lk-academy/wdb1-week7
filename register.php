@@ -111,13 +111,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
                             <?php endif; ?>
 
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control <?=empty($first_name) ? '' : 'is-invalid' ?>"
+                                <input type="text" class="form-control <?=empty($first_name_err) ? '' : 'is-invalid' ?>"
                                     value="<?=$first_name?>" name="first_name" id="first_name">
                                 <label for="first_name">First name</label>
                                 <div class="invalid-feedback"><?=$first_name_err?></div>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control <?=empty($last_name) ? '' : 'is-invalid' ?>"
+                                <input type="text" class="form-control <?=empty($last_name_err) ? '' : 'is-invalid' ?>"
                                     value="<?=$last_name?>" name="last_name" id="last_name">
                                 <label for="last_name">Last name</label>
                                 <div class="invalid-feedback"><?=$last_name_err?></div>
